@@ -5,11 +5,11 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "build": "zip -r functions.zip src node_modules package.json"
+    "dev": "nodemon app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.5",
@@ -32,8 +32,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
-  },
-  "engines": {
-    "node": "14.x"
   }
 }

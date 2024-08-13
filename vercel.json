@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/v1/auth/(.*)",
+        "dest": "routes/authRoutes.js"
+      },
+      {
+        "src": "/api/v1/users/(.*)",
+        "dest": "routes/orderRoutes.js"
+      },
+      {
+        "src": "/api/v1/products/(.*)",
+        "dest": "routes/productRoutes.js"
+      },
+      {
+        "src": "/api/v1/reviews/(.*)",
+        "dest": "routes/reviewRoutes.js"
+      },
+      {
+        "src": "/api/v1/orders/(.*)",
+        "dest": "routes/userRoutes.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
+    ]
+  } 
